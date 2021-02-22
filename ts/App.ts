@@ -30,13 +30,14 @@ class App extends Page {
         // model      -> "src/model/HomeModel.js"
         //router.navigate("home");
 
-        let self = this
-        let run = 
-        LayoutManager.load("main",null,function(err: Error, rootView?: View) {
-            if(!err){
-                self.window.addChild(rootView)
-            }
-        })
+        // let self = this
+        // LayoutManager.load("main",null,function(err: Error, rootView?: View) {
+        //     if(!err){
+        //         self.window.addChild(rootView)
+        //     }
+        // })
+
+        router.navigate("main")
 
     }
 }
