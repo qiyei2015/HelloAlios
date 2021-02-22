@@ -8,6 +8,11 @@ import Model = require("@ali/caf-types/yunos/appmodel/Model");
 
 class MainModel extends Model {
 
+    initProperties(){
+        return {
+            message:"hello world"
+        }
+    }
 }
 
-module.exports = MainModel
+export = MainModel

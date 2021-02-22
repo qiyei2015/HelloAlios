@@ -6,7 +6,9 @@ import StackRouter = require("yunos/appmodel/StackRouter");
 import LayoutManager = require("yunos/ui/markup/LayoutManager");
 import View = require("@ali/caf-types/yunos/ui/view/View");
 
+let router:StackRouter
 class App extends Page {
+    
 
     get theme() {
         return "default";
@@ -18,7 +20,7 @@ class App extends Page {
 
     onStart() {
         log.I("onStart");
-        let router = new StackRouter();
+        router = new StackRouter();
 
         router.container = this.window;
 
@@ -37,8 +39,17 @@ class App extends Page {
         //     }
         // })
 
+        // //注册路由
+        // router.route("main",() => {
+        //     return require("./presenter/MainPresenter")
+        // })
+
         router.navigate("main")
 
+    }
+
+    onStop(){
+        router.destroy()
     }
 }
 
