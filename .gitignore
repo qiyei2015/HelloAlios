@@ -1,5 +1,6 @@
 .vscode
 .aliosignore
-.eslintrc
-.eslintrc.json
 .tern-project
+/.node_modules
+/node_modules
+
