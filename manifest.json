@@ -1,0 +1,20 @@
+{
+    "domain": {
+        "name": "HelloAlios.yunos.com",
+        "use_sdk": 1,
+        "version_code": 1,
+        "version": "1",
+        "default_locale": "zh-CN"
+    },
+    "pages": [
+        {
+            "uri": "page://HelloAlios.yunos.com/Main",
+            "content_path": "src/App.js",
+            "main": true,
+            "icon": "res/default/images/icon.png",
+            "extension": {
+                "debuggable": "yes"
+            }
+        }
+    ]
+}

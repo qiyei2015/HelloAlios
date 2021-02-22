@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextView
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
+    id="main" layout="{layout.main}" propertySetName="main"
+    text="Hello Page"
+    width="{dp(360)}"
+    height="{dp(640)}"
+    fontSize="30sp"
+    color="#FFFFFF"
+    background="#FF6600"
+    align="{enum.TextView.Align.Center}"
+    verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+/>

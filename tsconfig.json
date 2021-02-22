@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "es6"
+        ],
+        "typeRoots": [
+            "node_modules/@ali/caf-types/@types",
+            "node_modules/@types"
+        ],
+        "types": [
+            "node",
+            "yunos"
+        ],
+        "target": "es2016",
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "alwaysStrict": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "outDir": "./src",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "*",
+                "node_modules/@ali/caf-types/*",
+                "node_modules/@banma/hdt-ui-types/*"
+            ]
+        }
+    },
+    "include": [
+        "ts/**/*.ts"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "node_modules",
+        "src/**/*.ts"
+    ]
+}

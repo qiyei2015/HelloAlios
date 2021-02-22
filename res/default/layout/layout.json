@@ -1,0 +1,24 @@
+{
+    "home": {
+        "type": "RelativeLayout",
+        "params": {
+            "title": {
+                "align": {
+                    "middle": "parent",
+                    "center": "parent"
+                }
+            }
+        }
+    },
+    "main": {
+        "type": "RelativeLayout",
+        "params": {
+            "title": {
+                "align": {
+                    "middle": "parent",
+                    "center": "parent"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompositeView
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
+    id="home" layout="{layout.home}" propertySetName="home"
+>
+    <TextView id="title" text="{{message}}" />
+</CompositeView>
