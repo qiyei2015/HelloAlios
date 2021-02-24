@@ -5,4 +5,44 @@
     id="home" layout="{layout.home}" propertySetName="home"
 >
     <TextView id="title" text="{{message}}" />
+
+    <TextView 
+        id="home_btn" 
+        text="home" 
+        width="{config.common_button_width}" 
+        height="{config.common_button_height}"
+        fontSize="{config.common_button_fontSize}"
+        color="{config.common_button_color}"
+        background="{config.common_button_background}"
+        multiState="{confog.home_button_multistate}"/>
+
+    <TextView 
+        id="main_btn" 
+        text="main" 
+        width="{config.common_button_width}" 
+        height="{config.common_button_height}"
+        fontSize="{config.common_button_fontSize}"
+        color="{config.common_button_color}"
+        background="{config.common_button_background}"
+        multiState="{confog.home_button_multistate}"/>
+
+    <TextView 
+        id="navi_btn" 
+        text="navi" 
+        width="{config.common_button_width}" 
+        height="{config.common_button_height}"
+        fontSize="{config.common_button_fontSize}"
+        color="{config.common_button_color}"
+        background="{config.common_button_background}"
+        multiState="{confog.home_button_multistate}"/>
+
+    <TextView 
+        id="setting_btn" 
+        text="setting" 
+        width="{config.common_button_width}" 
+        height="{config.common_button_height}"
+        fontSize="{config.common_button_fontSize}"
+        color="{config.common_button_color}"
+        background="{config.common_button_background}"
+        multiState="{confog.home_button_multistate}"/>
 </CompositeView>

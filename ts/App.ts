@@ -44,7 +44,7 @@ class App extends Page {
         //     return require("./presenter/MainPresenter")
         // })
 
-        router.navigate("main")
+        router.navigate("home")
 
     }
 

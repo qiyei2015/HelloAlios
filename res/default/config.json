@@ -1,0 +1,20 @@
+{
+    "common_left_margin": "{sdp(20)}",
+    "common_button_width": "{sdp(120)}",
+    "common_button_height": "{sdp(50)}",
+    "common_button_fontSize": "50sp",
+    "common_button_color": "#FFFFFF",
+    "common_button_background": "#FF6600",
+    "home_button_multistate": {
+        "normal": {
+            "background": "red"
+        },
+        "pressed": {
+            "background": "yellow"
+        },
+        "disabled": {
+            "background": "blue"
+        }
+    }
+
+}

@@ -7,7 +7,7 @@ class HomeModel extends Model {
     public count: number;
     initProperties() {
         return {
-            message: "Hello AliOS for Car9999",
+            message: "AliOS",
             count: 0
         };
     }
