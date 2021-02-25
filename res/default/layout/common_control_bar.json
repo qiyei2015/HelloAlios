@@ -1,0 +1,40 @@
+{
+    "title_bar": {
+        "type": "RelativeLayout",
+        "params": {
+            "back_img": {
+                "align": {
+                    "left": "parent",
+                    "bottom": "parent"
+                },
+                "margin": {
+                    "left": "{config.back_img_margin_left}"
+                }
+            },
+            "title": {
+                "align": {
+                    "left": {
+                        "target": 0,
+                        "side": "right"
+                    },
+                    "top": "parent"
+                },
+                "margin": {
+                    "left": "{config.title_margin_left}",
+                    "top": "{config.title_margin_top}"
+                }
+            },
+            "divider": {
+                "align": {
+                    "bottom": "parent",
+                    "left": "parent",
+                    "right": "parent"
+                },
+                "margin": {
+                    "left": "{config.divider_margin}",
+                    "right": "{config.divider_margin}"
+                }
+            }
+        }
+    }
+}

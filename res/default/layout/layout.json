@@ -17,7 +17,7 @@
                     "left": "parent"
                 },
                 "margin": {
-                    "top": "{config.common_left_margin}",
+                    "top": "{sdp(100)}",
                     "left": "{config.common_left_margin}"
                 }
             },
@@ -83,10 +83,21 @@
     "main": {
         "type": "RelativeLayout",
         "params": {
-            "title": {
+            "action_bar": {
                 "align": {
-                    "middle": "parent",
-                    "center": "parent"
+                    "left": "parent",
+                    "right": "parent",
+                    "top": "parent"
+                }
+            },
+            "content": {
+                "align": {
+                    "top": {
+                        "target": "action_bar",
+                        "side": "bottom"
+                    },
+                    "left": "parent",
+                    "right": "parent"
                 }
             }
         }

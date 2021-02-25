@@ -1,6 +1,13 @@
 "use strict";
 "use sound";
 import Presenter = require("yunos/appmodel/Presenter");
+import Router = require("yunos/appmodel/Router");
+import TextView = require("yunos/ui/view/TextView");
+import TapRecognizer = require('yunos/ui/gesture/TapRecognizer')
+
+
+const TAG = "HomePresenter"
+let router:Router
 
 class HomePresenter extends Presenter {
 
@@ -19,6 +26,16 @@ class HomePresenter extends Presenter {
         // view & model will be bound after presenter create
         // so for now
         // this.view & this.model will still be null
+        router = this.context.router;
+    }
+
+    onViewAttached(){
+        let homeBtn:TextView = this.view.findViewById("main_btn") as TextView
+        homeBtn.addGestureRecognizer(new TapRecognizer())
+        homeBtn.on("tap",event => {
+            log.I(TAG,"homeBtn click")
+            router.navigate("main")
+        })
     }
 
     onDestroy() {

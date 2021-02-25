@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompositeView
+    height="{config.title_bar_height}"
+    layout="{layout.title_bar}">
+  <ImageView
+      id="back_img"
+      width="{config.title_left_img}"
+      height="{config.title_left_img}"
+      multiState="{config.img_title_leftMultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="title"
+      color="#F0F2F7"
+      fontSize="{config.title_fontSize}" />
+  <View
+      id="divider"
+      height="{config.divider_height}"
+      background="#C1A700" />
+</CompositeView>

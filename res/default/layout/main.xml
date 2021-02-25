@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<CompositeView xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
+    id="tv" layout="{layout.main}" propertySetName="main">
+
+  <include
+      markup="common_title_bar"
+      id="action_bar" />
+
 <TextView
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
-    id="tv" layout="{layout.main}" propertySetName="main"
+    id="content"
     text="Hello Page"
     width="{dp(360)}"
     height="{dp(640)}"
@@ -10,5 +15,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     color="{config.common_button_color}"
     background="#FF6600"
     align="{enum.TextView.Align.Center}"
-    verticalAlign="{enum.TextView.VerticalAlign.Middle}"
-/>
+    verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+
+</CompositeView>
+
+
+
+
+
