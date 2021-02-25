@@ -1,22 +1,5 @@
 {
 
-    "title_bar_height": "{sdp(85)}",
-    "back_img_margin_left": "{sdp(28 + 60)}",
-    "title_left_img": "{sdp(60)}",
-    "title_fontSize": "{sdp(34)}",
-    "divider_height": "{sdp(2)}",
-    "title_margin_left": "{sdp(47)}",
-    "title_margin_top": "{sdp(25)}",
-    "divider_margin": "{sdp(116)}",
-    "img_title_leftMultiState": {
-        "normal": {
-            "src": "{img(images/btn_universal_back_not_activated.png)}"
-        },
-        "pressed": {
-            "src": "{img(images/btn_universal_back_pressed)}"
-        }
-    },
-
     "control_bar_width": "{sdp(100)}",
     "control_bar_height": "{sdp(600)}",
 
@@ -57,26 +40,5 @@
         "pressed": {
             "src": "{img(images/btn_universal_back_pressed)}"
         }
-    },
-
-
-
-    "common_left_margin": "{sdp(20)}",
-    "common_button_width": "{sdp(120)}",
-    "common_button_height": "{sdp(50)}",
-    "common_button_fontSize": "50sp",
-    "common_button_color": "#FFFFFF",
-    "common_button_background": "#FF6600",
-    "home_button_multistate": {
-        "normal": {
-            "background": "red"
-        },
-        "pressed": {
-            "background": "yellow"
-        },
-        "disabled": {
-            "background": "blue"
-        }
     }
-
 }

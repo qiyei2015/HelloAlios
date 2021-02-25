@@ -1,0 +1,18 @@
+{
+    "title_bar_height": "{sdp(85)}",
+    "back_img_margin_left": "{sdp(88)}",
+    "title_left_img": "{sdp(60)}",
+    "title_fontSize": "{sdp(34)}",
+    "divider_height": "{sdp(2)}",
+    "title_margin_left": "{sdp(47)}",
+    "title_margin_top": "{sdp(25)}",
+    "divider_margin": "{sdp(116)}",
+    "img_title_leftMultiState": {
+        "normal": {
+            "src": "{img(images/btn_universal_back_not_activated.png)}"
+        },
+        "pressed": {
+            "src": "{img(images/btn_universal_back_pressed)}"
+        }
+    }
+}

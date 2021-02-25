@@ -2,8 +2,12 @@
 <CompositeView
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
-    id="home" layout="{layout.home}" propertySetName="home"
->
+    id="home" layout="{layout.home}" propertySetName="home">
+
+  <!-- <include
+      markup="common_control_bar"
+      id="control_bar" /> -->
+
     <TextView id="title" text="{{message}}" />
 
     <TextView 

@@ -2,6 +2,15 @@
     "home": {
         "type": "RelativeLayout",
         "params": {
+            "control_bar": {
+                "align": {
+                    "left": "parent",
+                    "top": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(60)}"
+                }
+            },
             "title": {
                 "align": {
                     "middle": "parent",

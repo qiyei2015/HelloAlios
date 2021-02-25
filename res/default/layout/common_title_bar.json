@@ -8,7 +8,7 @@
                     "bottom": "parent"
                 },
                 "margin": {
-                    "left": "{config.back_img_margin_left}"
+                    "left": "{config_title_bar.back_img_margin_left}"
                 }
             },
             "title": {
@@ -20,8 +20,8 @@
                     "top": "parent"
                 },
                 "margin": {
-                    "left": "{config.title_margin_left}",
-                    "top": "{config.title_margin_top}"
+                    "left": "{config_title_bar.title_margin_left}",
+                    "top": "{config_title_bar.title_margin_top}"
                 }
             },
             "divider": {
@@ -31,8 +31,8 @@
                     "right": "parent"
                 },
                 "margin": {
-                    "left": "{config.divider_margin}",
-                    "right": "{config.divider_margin}"
+                    "left": "{config_title_bar.divider_margin}",
+                    "right": "{config_title_bar.divider_margin}"
                 }
             }
         }
