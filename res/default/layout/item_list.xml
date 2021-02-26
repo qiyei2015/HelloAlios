@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompositeView
+    height="{config.common_item_height}"
+    layout="{layout.item_list}">
+  <CompositeView layout="{layout.item_list}">
+    <ImageView
+        id="thumb_img"
+        width="{config.thumb_width}"
+        height="{config.thumb_height}"
+        src="{img(images/icon/icon_item_list_thumb.png)}"
+        scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+    <TextView
+        id="title"
+        fontSize="{config.item_list_title_fontSize}"
+        color="{config.item_list_text_color}" />
+  </CompositeView>
+</CompositeView>

@@ -16,6 +16,13 @@ class ListModel extends Model {
         }
     }
 
+    getLocalData():string[]{
+        let data:string[];
+        for (let i = 0; i < 10000; i++) {
+            data[i] = "数据 " + i;
+        }
+        return data
+    }
 }
 
 export = ListModel

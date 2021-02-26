@@ -1,0 +1,25 @@
+{
+    "default_loading": {
+        "type": "RelativeLayout",
+        "params": {
+            "rotate_img": {
+                "align": {
+                    "center": "parent",
+                    "middle": "parent"
+                }
+            },
+            "loading_tv": {
+                "align": {
+                    "top": {
+                        "target": 0,
+                        "side": "bottom"
+                    },
+                    "center": "parent"
+                },
+                "margin": {
+                    "top": "{config.loading_text_margin_top}"
+                }
+            }
+        }
+    }
+}

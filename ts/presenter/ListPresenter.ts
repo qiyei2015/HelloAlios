@@ -7,12 +7,20 @@ import TextView = require("yunos/ui/view/TextView");
 import Presenter = require("yunos/appmodel/Presenter");
 import TapRecognizer = require('yunos/ui/gesture/TapRecognizer')
 import ImageView = require("yunos/ui/view/ImageView");
+import View = require("yunos/ui/view/View");
+import ListView = require('yunos/ui/view/ListView')
+import ToastUtils = require("ts/util/ToastUtils");
+import MyAdapter = require("ts/adapter/MyAdapter");
+import ListModel = require("ts/model/ListModel");
+import CompositeView = require("yunos/ui/view/CompositeView");
 
 const TAG = "ListPresenter"
 let router:Router
 class ListPresenter extends Presenter {
 
     private router:Router
+    private listView:ListView
+    private defaultLoadingView:View
 
     onCreate(){
         router = this.context.router;
@@ -21,6 +29,8 @@ class ListPresenter extends Presenter {
     onViewAttached(){
         //初始化title bar
         this.initTitlebar(router)
+        this.initView(this.view)
+        //this.initData()
     }
 
     onDestroy(){
@@ -37,6 +47,27 @@ class ListPresenter extends Presenter {
             router.back()
         })
     }
+
+    initView(view:View){
+        this.defaultLoadingView = view.findViewById('default_loading')
+        this.listView = <ListView> view.findViewById("content_list")
+        // this.listView.on("itemselect",(itemView:View,position:number) => {
+
+        //      ToastUtils.showToast("cilck pos=" + position)
+
+        // })
+    }
+
+    initData(){
+        let adapter = new MyAdapter()
+        // 把数据添加到适配器
+        //let model = <ListModel>this.model
+        //adapter.setData(model.getLocalData())
+        this.listView.adapter = adapter
+    }
 }
+
+
+
 
 export = ListPresenter

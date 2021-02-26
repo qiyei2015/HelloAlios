@@ -6,16 +6,12 @@
       markup="common_title_bar"
       id="action_bar" />
 
-<TextView
-    id="content"
-    text="{{message}}"
-    width="{dp(300)}"
-    height="{dp(50)}"
-    fontSize="50sp"
-    color="{config.common_button_color}"
-    background="#FF6600"
-    align="{enum.TextView.Align.Center}"
-    verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+  <ListView
+      id="content_list"
+      visibility="{enum.View.Visibility.Visible}" /> -->
+  <include
+      id="default_loading"
+      markup="default_loading" />
 
 </CompositeView>
 

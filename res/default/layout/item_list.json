@@ -1,0 +1,28 @@
+{
+    "item_list": {
+        "type": "RelativeLayout",
+        "params": {
+            "thumb_img": {
+                "align": {
+                    "left": "parent",
+                    "middle": "parent"
+                }
+            },
+            "title": {
+                "align": {
+                    "left": {
+                        "target": 0,
+                        "side": "right"
+                    },
+                    "top": {
+                        "target": 0,
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}"
+                }
+            }
+        }
+    }
+}

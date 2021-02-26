@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompositeView layout="{layout.default_loading}">
+  <ImageView
+      id="rotate_img"
+      width="{config.loading_img_size}"
+      height="{config.loading_img_size}"
+      src="{config.loading_img_src}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="loading_tv"
+      color="{config.loading_hint_color}"
+      fontSize="{config.loading_hint_size}"
+      text="{string.loading}"
+      multiLine="true" />
+</CompositeView>

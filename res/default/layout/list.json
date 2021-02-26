@@ -9,15 +9,30 @@
                     "top": "parent"
                 }
             },
-            "content": {
+            "content_list": {
                 "align": {
+                    "left": "parent",
+                    "right": "parent",
                     "top": {
                         "target": "action_bar",
                         "side": "bottom"
                     },
+                    "bottom": "parent"
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
+                }
+            },
+            "default_loading": {
+                "align": {
                     "left": "parent",
                     "right": "parent",
-                    "middle": "parent"
+                    "top": {
+                        "target": 0,
+                        "side": "bottom"
+                    },
+                    "bottom": "parent"
                 }
             }
         }

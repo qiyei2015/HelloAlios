@@ -1,6 +1,7 @@
 {
 
     "common_left_margin": "{sdp(20)}",
+    "common_right_margin": "{sdp(20)}",
     "common_button_width": "{sdp(120)}",
     "common_button_height": "{sdp(50)}",
     "common_button_fontSize": "50sp",
@@ -16,6 +17,24 @@
         "disabled": {
             "background": "blue"
         }
-    }
+    },
 
+    "loading_hint_color": "#f0f2f7",
+    "loading_hint_size": "{sdp(28)}",
+
+    "hint_text_margin_left": "{sdp(40)}",
+    "hint_text_height": "{sdp(122)}",
+    "hint_text_width": "{sdp(464)}",
+
+    "common_item_height": "{sdp(104)}",
+    "thumb_width": "{sdp(120)}",
+    "thumb_height": "{sdp(75.6)}",
+
+    "item_list_title_fontSize": "{30sp}",
+    "item_card_content_fontSize": "{sdp(28)}",
+    "item_list_text_color": "#F0F2F7",
+    "item_card_margin_left": "{sdp(20)}",
+    "item_card_margin_right": "{sdp(20)}",
+    "item_card_button_width": "{sdp(160)}",
+    "item_card_button_height": "{sdp(50)}",
 }
