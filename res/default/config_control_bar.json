@@ -1,44 +1,61 @@
 {
 
-    "control_bar_width": "{sdp(100)}",
-    "control_bar_height": "{sdp(600)}",
+    "width": "{sdp(100)}",
+    "height": "{sdp(600)}",
 
-    "control_bar_item_height": "{sdp(100)}",
-    "control_bar_title_fontSize": "sdp(34)",
-    "control_bar_title_color": "#F0F2F7",
+    "item_height": "{sdp(80)}",
 
-    "main_img_leftMultiState": {
+    "item_margin_top": "{sdp(0)}",
+    "item_to_item_margin": "{sdp(20)}",
+
+    "title_fontSize": "34sp",
+    "title_color": "#F0F2F7",
+
+    "home_img_MultiState": {
         "normal": {
-            "src": "{img(images/btn_universal_back_not_activated.png)}"
+            "src": "{img(images/icon/controlbar_setting_near_normal.png)}"
         },
         "pressed": {
-            "src": "{img(images/btn_universal_back_pressed)}"
+            "src": "{img(images/icon/controlbar_setting_near_pressed.png)}"
+        },
+        "disabled": {
+            "src": "{img(images/icon/controlbar_setting_near_disable.png)}"
         }
     },
 
-    "img_title_leftMultiState": {
+    "list_img_MultiState": {
         "normal": {
-            "src": "{img(images/btn_universal_back_not_activated.png)}"
+            "src": "{img(images/icon/controlbar_setting_near_normal.png)}"
         },
         "pressed": {
-            "src": "{img(images/btn_universal_back_pressed)}"
+            "src": "{img(images/icon/controlbar_setting_near_pressed.png)}"
+        },
+        "disabled": {
+            "src": "{img(images/icon/controlbar_setting_near_disable.png)}"
         }
     },
 
-    "img_title_leftMultiState": {
+    "navi_img_MultiState": {
         "normal": {
-            "src": "{img(images/btn_universal_back_not_activated.png)}"
+            "src": "{img(images/icon/controlbar_setting_near_normal.png)}"
         },
         "pressed": {
-            "src": "{img(images/btn_universal_back_pressed)}"
+            "src": "{img(images/icon/controlbar_setting_near_pressed.png)}"
+        },
+        "disabled": {
+            "src": "{img(images/icon/controlbar_setting_near_disable.png)}"
         }
     },
-    "img_title_leftMultiState": {
+
+    "setting_img_MultiState": {
         "normal": {
-            "src": "{img(images/btn_universal_back_not_activated.png)}"
+            "src": "{img(images/icon/controlbar_setting_near_normal.png)}"
         },
         "pressed": {
-            "src": "{img(images/btn_universal_back_pressed)}"
+            "src": "{img(images/icon/controlbar_setting_near_pressed.png)}"
+        },
+        "disabled": {
+            "src": "{img(images/icon/controlbar_setting_near_disable.png)}"
         }
     }
 }

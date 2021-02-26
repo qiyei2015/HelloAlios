@@ -2,14 +2,15 @@
 "use sound";
 
 
-import Router = require("@ali/caf-types/yunos/appmodel/Router");
-import TextView = require("@ali/caf-types/yunos/ui/view/TextView");
+import Router = require("yunos/appmodel/Router");
+import TextView = require("yunos/ui/view/TextView");
 import Presenter = require("yunos/appmodel/Presenter");
 import TapRecognizer = require('yunos/ui/gesture/TapRecognizer')
+import ImageView = require("yunos/ui/view/ImageView");
 
-const TAG = "MainPresenter"
+const TAG = "ListPresenter"
 let router:Router
-class MainPresenter extends Presenter {
+class ListPresenter extends Presenter {
 
     router:Router
 
@@ -25,13 +26,21 @@ class MainPresenter extends Presenter {
     }
 
     onViewAttached(){
-        let tv:TextView = this.view.findViewById("tv") as TextView
+        let tv:TextView = <TextView>this.view.findViewById("content")
         tv.text = "1234383883"
         tv.addGestureRecognizer(new TapRecognizer())
         tv.on("tap",event => {
             log.I(TAG,"tv click")
             router.navigate("home")
         })
+        
+        let homeImv:ImageView = <ImageView>this.view.findViewById("test_img")
+        homeImv.addGestureRecognizer(new TapRecognizer())
+        homeImv.addEventListener("tap",event => {
+            log.I(TAG,"homeImv click")
+            //router.navigate("home")
+        })
+
     }
 
     onDestroy(){
@@ -39,4 +48,4 @@ class MainPresenter extends Presenter {
     }
 }
 
-export = MainPresenter
+export = ListPresenter

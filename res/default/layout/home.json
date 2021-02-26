@@ -1,11 +1,23 @@
 {
-    "control_bar": {
+    "home": {
         "type": "RelativeLayout",
         "params": {
+            "control_bar": {
+                "align": {
+                    "left": "parent",
+                    "top": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(100)}"
+                }
+            },
             "home_img": {
                 "align": {
                     "left": "parent",
                     "top": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(100)}"
                 }
             },
             "home_tv": {
@@ -142,6 +154,15 @@
                 },
                 "margin": {
                     "top": "{config_control_bar.item_margin_top}"
+                }
+            },
+            "title": {
+                "align": {
+                    "left": {
+                        "target": "control_bar",
+                        "side": "right"
+                    },
+                    "middle": "parent"
                 }
             }
         }

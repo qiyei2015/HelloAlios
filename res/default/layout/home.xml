@@ -4,49 +4,71 @@
     xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
     id="home" layout="{layout.home}" propertySetName="home">
 
-  <!-- <include
+    <!-- <include
       markup="common_control_bar"
       id="control_bar" /> -->
+  <ImageView
+      id="home_img"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.home_img_MultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="home_tv"
+      text="home"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+
+  <ImageView
+      id="list_img"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}" 
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.list_img_MultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="list_tv"
+      text="list"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+  
+
+  <ImageView
+      id="navi_img"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.navi_img_MultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="navi_tv"
+      text="navi"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+
+  <ImageView
+      id="setting_img"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.setting_img_MultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
+  <TextView
+      id="setting_tv"
+      text="setting"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+
 
     <TextView id="title" text="{{message}}" />
 
-    <TextView 
-        id="home_btn" 
-        text="home" 
-        width="{config.common_button_width}" 
-        height="{config.common_button_height}"
-        fontSize="{config.common_button_fontSize}"
-        color="{config.common_button_color}"
-        background="{config.common_button_background}"
-        multiState="{confog.home_button_multistate}"/>
-
-    <TextView 
-        id="main_btn" 
-        text="main" 
-        width="{config.common_button_width}" 
-        height="{config.common_button_height}"
-        fontSize="{config.common_button_fontSize}"
-        color="{config.common_button_color}"
-        background="{config.common_button_background}"
-        multiState="{confog.home_button_multistate}"/>
-
-    <TextView 
-        id="navi_btn" 
-        text="navi" 
-        width="{config.common_button_width}" 
-        height="{config.common_button_height}"
-        fontSize="{config.common_button_fontSize}"
-        color="{config.common_button_color}"
-        background="{config.common_button_background}"
-        multiState="{confog.home_button_multistate}"/>
-
-    <TextView 
-        id="setting_btn" 
-        text="setting" 
-        width="{config.common_button_width}" 
-        height="{config.common_button_height}"
-        fontSize="{config.common_button_fontSize}"
-        color="{config.common_button_color}"
-        background="{config.common_button_background}"
-        multiState="{confog.home_button_multistate}"/>
 </CompositeView>

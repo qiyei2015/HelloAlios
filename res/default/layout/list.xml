@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompositeView xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
-    id="tv" layout="{layout.main}" propertySetName="main">
+    layout="{layout.list}" propertySetName="list">
 
   <include
       markup="common_title_bar"
@@ -9,13 +9,21 @@
 <TextView
     id="content"
     text="Hello Page"
-    width="{dp(360)}"
-    height="{dp(640)}"
+    width="{dp(300)}"
+    height="{dp(50)}"
     fontSize="50sp"
     color="{config.common_button_color}"
     background="#FF6600"
     align="{enum.TextView.Align.Center}"
     verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+
+  <ImageView
+      id="test_img"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.home_img_MultiState}"
+      scaleType="{enum.ImageView.ScaleType.Centerinside}" />
 
 </CompositeView>
 

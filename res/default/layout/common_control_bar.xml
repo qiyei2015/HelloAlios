@@ -1,52 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompositeView
-    height="{config_control_bar.control_bar_height}"
+    width="{config_control_bar.width}"
     layout="{layout.control_bar}">
   
-
   <ImageView
       id="home_img"
-      width="{config_control_bar.control_bar_width}"
-      height="{config_control_bar.control_bar_item_height}"
-      multiState="{config_control_bar.home_img_leftMultiState}"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.home_img_MultiState}"
       scaleType="{enum.ImageView.ScaleType.Centerinside}" />
   <TextView
       id="home_tv"
-      color="{config_control_bar.control_bar_title_color}"
-      fontSize="{config_control_bar.control_bar_title_fontSize}" />
+      text="home"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
 
   <ImageView
       id="list_img"
-      width="{config_control_bar.control_bar_width}"
-      height="{config_control_bar.control_bar_item_height}"
-      multiState="{config_control_bar.list_img_leftMultiState}"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}" 
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.list_img_MultiState}"
       scaleType="{enum.ImageView.ScaleType.Centerinside}" />
   <TextView
       id="list_tv"
-      color="{config_control_bar.control_bar_title_color}"
-      fontSize="{config_control_bar.control_bar_title_fontSize}" />
+      text="list"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
   
 
   <ImageView
       id="navi_img"
-      width="{config_control_bar.control_bar_width}"
-      height="{config_control_bar.control_bar_item_height}"
-      multiState="{config_control_bar.navi_img_leftMultiState}"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.navi_img_MultiState}"
       scaleType="{enum.ImageView.ScaleType.Centerinside}" />
   <TextView
       id="navi_tv"
-      color="{config_control_bar.control_bar_title_color}"
-      fontSize="{config_control_bar.control_bar_title_fontSize}" />
+      text="navi"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
 
   <ImageView
       id="setting_img"
-      width="{config_control_bar.control_bar_width}"
-      height="{config_control_bar.control_bar_item_height}"
-      multiState="{config_control_bar.setting_img_leftMultiState}"
+      width="{config_control_bar.width}"
+      height="{config_control_bar.item_height}"
+      src="{img(images/icon/controlbar_setting_near_normal.png)}"
+      multiState="{config_control_bar.setting_img_MultiState}"
       scaleType="{enum.ImageView.ScaleType.Centerinside}" />
   <TextView
       id="setting_tv"
-      color="{config_control_bar.control_bar_title_color}"
-      fontSize="{config_control_bar.control_bar_title_fontSize}" />
+      text="setting"
+      color="{config_control_bar.title_color}"
+      fontSize="{config_control_bar.title_fontSize}" 
+      align="{enum.TextView.Align.Center}"
+      verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
 
 </CompositeView>

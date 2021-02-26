@@ -1,0 +1,39 @@
+{
+    "list": {
+        "type": "RelativeLayout",
+        "params": {
+            "action_bar": {
+                "align": {
+                    "left": "parent",
+                    "right": "parent",
+                    "top": "parent"
+                }
+            },
+            "content": {
+                "align": {
+                    "top": {
+                        "target": "action_bar",
+                        "side": "bottom"
+                    },
+                    "left": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(10)}",
+                    "left": "{sdp(30)}"
+                }
+            },
+            "test_img": {
+                "align": {
+                    "top": {
+                        "target": "content",
+                        "side": "bottom"
+                    },
+                    "left": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(10)}"
+                }
+            }
+        }
+    }
+}

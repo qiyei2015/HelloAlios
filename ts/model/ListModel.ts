@@ -6,7 +6,7 @@ import Model = require("@ali/caf-types/yunos/appmodel/Model");
 
 
 
-class MainModel extends Model {
+class ListModel extends Model {
 
     initProperties(){
         return {
@@ -15,4 +15,4 @@ class MainModel extends Model {
     }
 }
 
-export = MainModel
+export = ListModel

@@ -1,9 +1,9 @@
 <theme name="default">
     <property-set name="home">
-        <property name="background">#D7D5D5</property>
-        <id name="title">
+        <property name="background">#FF6600</property>
+        <!-- <id name="title">
             <property name="color">#FF0000</property>
             <property name="fontSize">100dp</property>
-        </id>
+        </id> -->
     </property-set>
 </theme>
