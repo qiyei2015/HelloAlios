@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompositeView xsi:noNamespaceSchemaLocation="CLOUD_APP_MARKUP"
-    layout="{layout.list}" propertySetName="list">
+    layout="{layout.navi}" propertySetName="navi">
 
   <include
       markup="common_title_bar"

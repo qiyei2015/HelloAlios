@@ -8,9 +8,9 @@ import Presenter = require("yunos/appmodel/Presenter");
 import TapRecognizer = require('yunos/ui/gesture/TapRecognizer')
 import ImageView = require("yunos/ui/view/ImageView");
 
-const TAG = "ListPresenter"
+const TAG = "NaviPresenter"
 let router:Router
-class ListPresenter extends Presenter {
+class NaviPresenter extends Presenter {
 
     private router:Router
 
@@ -29,7 +29,7 @@ class ListPresenter extends Presenter {
 
     initTitlebar(router:Router){
         let tv:TextView = <TextView>this.view.findViewById("title")
-        tv.text = "list"
+        tv.text = "导航"
         let backImv = <ImageView>this.view.findViewById("back_img");
         backImv.addGestureRecognizer(new TapRecognizer())
         backImv.on("tap",event => {
@@ -39,4 +39,4 @@ class ListPresenter extends Presenter {
     }
 }
 
-export = ListPresenter
+export = NaviPresenter

@@ -4,18 +4,13 @@
 import Model = require("yunos/appmodel/Model");
 
 
-
-
-class ListModel extends Model {
-    //与view中数据绑定
+class SettingModel extends Model {
     public message: string;
-
     initProperties(){
         return {
-            message:"列表页"
+            message:"设置页"
         }
     }
-
 }
 
-export = ListModel
+export = SettingModel

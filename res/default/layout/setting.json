@@ -1,5 +1,5 @@
 {
-    "list": {
+    "setting": {
         "type": "RelativeLayout",
         "params": {
             "action_bar": {

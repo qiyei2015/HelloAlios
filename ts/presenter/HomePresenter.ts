@@ -47,19 +47,17 @@ class HomePresenter extends Presenter {
         })
 
         let naviImv:ImageView =  <ImageView>this.view.findViewById("navi_img")
-        //naviImv.touchRegion = touchRegion
         naviImv.addGestureRecognizer(new TapRecognizer())
         naviImv.on("tap",event => {
             log.I(TAG,"naivImv click")
-            //router.navigate("navi")
+            router.navigate("navi")
         })
 
         let settingImv:ImageView =  <ImageView>this.view.findViewById("setting_img")
-        //settingImv.touchRegion = touchRegion
         settingImv.addGestureRecognizer(new TapRecognizer())
         settingImv.on("tap",event => {
             log.I(TAG,"settingImv click")
-            //router.navigate("setting")
+            router.navigate("setting")
         })
     }
 

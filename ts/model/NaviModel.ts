@@ -4,18 +4,13 @@
 import Model = require("yunos/appmodel/Model");
 
 
-
-
-class ListModel extends Model {
-    //与view中数据绑定
+class NaviModel extends Model {
     public message: string;
-
     initProperties(){
         return {
-            message:"列表页"
+            message:"导航页"
         }
     }
-
 }
 
-export = ListModel
+export = NaviModel

@@ -1,5 +1,5 @@
 {
-    "list": {
+    "navi": {
         "type": "RelativeLayout",
         "params": {
             "action_bar": {

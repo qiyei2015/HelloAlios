@@ -8,16 +8,17 @@
                     "bottom": "parent"
                 },
                 "margin": {
-                    "left": "{config_title_bar.back_img_margin_left}"
+                    "left": "{sdp(100)}"
                 }
             },
             "title": {
                 "align": {
                     "left": {
-                        "target": 0,
+                        "target": "back_img",
                         "side": "right"
                     },
-                    "top": "parent"
+                    "top": "parent",
+                    "right": "parent"
                 },
                 "margin": {
                     "left": "{config_title_bar.title_margin_left}",
