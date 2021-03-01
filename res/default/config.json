@@ -38,4 +38,16 @@
     "item_card_margin_right": "{sdp(20)}",
     "item_card_button_width": "{sdp(160)}",
     "item_card_button_height": "{sdp(50)}",
+
+    "common_button_multistate": {
+        "normal": {
+            "background": "red"
+        },
+        "pressed": {
+            "background": "yellow"
+        },
+        "disabled": {
+            "background": "blue"
+        }
+    }
 }

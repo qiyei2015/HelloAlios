@@ -4,17 +4,26 @@
         "use_sdk": 1,
         "version_code": 1,
         "version": "1",
-        "default_locale": "zh-CN"
-    },
-    "pages": [
-        {
-            "uri": "page://HelloAlios.yunos.com/Main",
-            "content_path": "src/App.js",
-            "main": true,
-            "icon": "res/default/images/icon.png",
-            "extension": {
-                "debuggable": "yes"
-            }
+        "default_locale": "zh-CN",
+        "permission": {
+            "use_permission": [
+                "NETWORK.permission.yunos.com",
+                "NETWORK_ACCESS.permission.yunos.com",
+                "NETWORK_BIND_SERVICE.permission.yunos.com",
+                "NETWORK_RAW.permission.yunos.com",
+                "NETWORK_ADMIN.permission.yunos.com",
+                "WIFI.permission.yunos.com",
+                "MOBILE.permission.yunos.com"
+            ]
         }
-    ]
+    },
+    "pages": [{
+        "uri": "page://HelloAlios.yunos.com/Main",
+        "content_path": "src/App.js",
+        "main": true,
+        "icon": "res/default/images/icon.png",
+        "extension": {
+            "debuggable": "yes"
+        }
+    }]
 }

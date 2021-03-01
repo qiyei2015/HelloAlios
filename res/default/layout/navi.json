@@ -9,15 +9,67 @@
                     "top": "parent"
                 }
             },
-            "content": {
+            "query_btn": {
                 "align": {
                     "top": {
                         "target": "action_bar",
                         "side": "bottom"
                     },
-                    "left": "parent",
+                    "left": "parent"
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}",
+                    "top": " {sdp(100)}"
+                }
+            },
+            "query_content": {
+                "align": {
+                    "left": {
+                        "target": "query_btn",
+                        "side": "right"
+                    },
                     "right": "parent",
-                    "middle": "parent"
+                    "top": {
+                        "target": "query_btn",
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
+                }
+            },
+
+            "register_btn": {
+                "align": {
+                    "top": {
+                        "target": "query_btn",
+                        "side": "bottom"
+                    },
+                    "left": "parent"
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}",
+                    "top": " {sdp(50)}"
+                }
+            },
+            "register_content": {
+                "align": {
+                    "left": {
+                        "target": "register_btn",
+                        "side": "right"
+                    },
+                    "right": "parent",
+                    "top": {
+                        "target": "register_btn",
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
                 }
             }
         }

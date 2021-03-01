@@ -6,16 +6,53 @@
       markup="common_title_bar"
       id="action_bar" />
 
-<TextView
-    id="content"
-    text="{{message}}"
-    width="{dp(300)}"
-    height="{dp(50)}"
-    fontSize="50sp"
-    color="{config.common_button_color}"
-    background="#FF6600"
-    align="{enum.TextView.Align.Center}"
-    verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+    <Button
+        id="query_btn"
+        text="查询"
+        width="{dp(60)}"
+        height="{dp(40)}"
+        fontSize="25sp"
+        color="{config.common_button_color}"
+        align="{enum.TextView.Align.Center}"
+        verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+        multiState="{config.common_button_multistate}"
+    />
+
+    <TextView
+        id="query_content"
+        text=""
+        width="{dp(100)}"
+        height="{dp(50)}"
+        fontSize="30sp"
+        color="{config.common_button_color}"
+        background="#FF6600"
+        align="{enum.TextView.Align.Center}"
+        verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+    />
+
+    <Button
+        id="register_btn"
+        text="注册"
+        width="{dp(60)}"
+        height="{dp(40)}"
+        fontSize="25sp"
+        color="{config.common_button_color}"
+        align="{enum.TextView.Align.Center}"
+        verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+        multiState="{config.common_button_multistate}"
+    />
+
+    <TextView
+        id="register_content"
+        text=""
+        width="{dp(100)}"
+        height="{dp(50)}"
+        fontSize="30sp"
+        color="{config.common_button_color}"
+        background="#FF6600"
+        align="{enum.TextView.Align.Center}"
+        verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+    />
 
 </CompositeView>
 
