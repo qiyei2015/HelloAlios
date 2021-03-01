@@ -4,7 +4,7 @@
 import UserBO = require("../data/UserBO");
 import Model = require("yunos/appmodel/Model");
 import ToastUtils = require("../utils/ToastUtils");
-
+import HttpApi = require("../http/HttpApi");
 class NaviModel extends Model {
     public message: string;
     initProperties(){
@@ -13,12 +13,12 @@ class NaviModel extends Model {
         }
     }
 
-    queryUser(user:UserBO){
-        ToastUtils.showToast("button Click queryUser !")
+    queryUser(name:string){
+        return HttpApi.getInstance().isUserExist(name)
     }
 
-    registerUser(user:UserBO){
-        ToastUtils.showToast("button Click registerUser !")
+    registerUser(name:string,pwd:string){
+        return HttpApi.getInstance().registerUser(new UserBO(name,pwd,pwd))
     }
 }
 

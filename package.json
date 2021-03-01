@@ -5,7 +5,9 @@
     "directories": {
         "test": "test"
     },
-    "dependencies": {},
+    "dependencies": {
+        "rxjs": "^6.6.3"
+    },
     "devDependencies": {
         "@ali/caf-types": "file:D:/Alios/sdk/types/api/caf/level-5/ivi/AS22L/ali-caf-types-5.0.0.tgz",
         "@banma/hdt-ui-types": "file:D:/Alios/sdk/types/api/hdt-ui/level-5/ivi/AS22L/banma-hdt-ui-types-2.0.85.tgz"

@@ -1,12 +1,12 @@
 class UserBO {
-    name:string
+    username:string
     password:string
-    confirmPwd:string
+    confirmPassword:string
 
     constructor(name:string,pwd:string = "",conformPwd:string = ""){
-        this.name = name
+        this.username = name
         this.password = pwd
-        this.confirmPwd = conformPwd
+        this.confirmPassword = conformPwd
     }
 }
 
