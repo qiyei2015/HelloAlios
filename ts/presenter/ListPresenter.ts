@@ -9,14 +9,10 @@ import TapRecognizer = require('yunos/ui/gesture/TapRecognizer')
 import ImageView = require("yunos/ui/view/ImageView");
 import View = require("yunos/ui/view/View");
 import ListView = require('yunos/ui/view/ListView')
-//import ToastUtils = require("ts/util/ToastUtils");
-//import MyAdapter = require("ts/adapter/MyAdapter");
+import ToastUtils = require("../utils/ToastUtils");
+import MyAdapter = require("../adapter/MyAdapter");
 import ListModel = require("ts/model/ListModel");
-import CompositeView = require("yunos/ui/view/CompositeView");
 
-import BaseAdapter = require("yunos/ui/adapter/BaseAdapter");
-import LayoutManager = require('yunos/ui/markup/LayoutManager')
-import Toast = require('yunos/ui/widget/Toast')
 
 const TAG = "ListPresenter"
 let router:Router
@@ -57,10 +53,8 @@ class ListPresenter extends Presenter {
         this.listView = <ListView> view.findViewById("content_list")
         this.listView.on("itemselect",(itemView:View,position:number) => {
 
-             //ToastUtils.showToast("cilck pos=" + position)
-             let toast:Toast = new Toast()
-             toast.text = `cilck pos=${position}`
-             toast.show()
+             ToastUtils.showToast(`cilck pos=${position}`)
+
         })
     }
 
@@ -72,31 +66,5 @@ class ListPresenter extends Presenter {
         this.listView.adapter = adapter
     }
 }
-
-class MyAdapter extends BaseAdapter{
-
-    private datas:String[]
-
-    createItem(position: number, convertView: View): View {
-
-         // 根据 position 获得当前 item 的 data
-         var itemData = this.datas[position];
-         // convertView 为空则创建新的 View
-         if (!convertView) {
-             convertView = LayoutManager.loadSync('item_list');
-         }
-
-         const titleTv = <TextView>convertView.findViewById('title')
-         titleTv.text = `我是第${position}行` + " 数据:" + itemData
-         convertView.tag = "" + position
-         return convertView;
-    }
-
-    setData(datas:String[]){
-        this.datas = datas
-        this.data = this.datas
-    }
-}
-
 
 export = ListPresenter

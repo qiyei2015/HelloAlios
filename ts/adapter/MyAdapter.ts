@@ -28,6 +28,7 @@ class MyAdapter extends BaseAdapter{
 
     setData(datas:String[]){
         this.datas = datas
+        this.data = this.datas
     }
 }
 
