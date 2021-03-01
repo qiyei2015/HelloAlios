@@ -23,10 +23,26 @@
                     "top": " {sdp(100)}"
                 }
             },
-            "query_content": {
+            "name_input_query_TextField": {
                 "align": {
                     "left": {
                         "target": "query_btn",
+                        "side": "right"
+                    },
+                    "top": {
+                        "target": "query_btn",
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
+                }
+            },
+            "query_content": {
+                "align": {
+                    "left": {
+                        "target": "name_input_query_TextField",
                         "side": "right"
                     },
                     "right": "parent",
@@ -55,15 +71,47 @@
                     "top": " {sdp(50)}"
                 }
             },
-            "register_content": {
+            "name_input_register_TextField": {
                 "align": {
                     "left": {
                         "target": "register_btn",
                         "side": "right"
                     },
-                    "right": "parent",
                     "top": {
                         "target": "register_btn",
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
+                }
+            },
+            "pwd_input_register_TextField": {
+                "align": {
+                    "left": {
+                        "target": "name_input_register_TextField",
+                        "side": "right"
+                    },
+                    "top": {
+                        "target": "name_input_register_TextField",
+                        "side": "top"
+                    }
+                },
+                "margin": {
+                    "left": "{config.common_left_margin}",
+                    "right": "{config.common_right_margin}"
+                }
+            },
+            "register_content": {
+                "align": {
+                    "left": {
+                        "target": "pwd_input_register_TextField",
+                        "side": "right"
+                    },
+                    "right": "parent",
+                    "top": {
+                        "target": "pwd_input_register_TextField",
                         "side": "top"
                     }
                 },

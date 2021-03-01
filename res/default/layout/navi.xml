@@ -6,6 +6,7 @@
       markup="common_title_bar"
       id="action_bar" />
 
+
     <Button
         id="query_btn"
         text="查询"
@@ -17,6 +18,22 @@
         verticalAlign="{enum.TextView.VerticalAlign.Middle}"
         multiState="{config.common_button_multistate}"
     />
+
+    <TextField
+        id="name_input_query_TextField"
+        width="{sdp(200)}"
+        height="{dp(60)}"
+        background="transparent"
+        borderWidth="{dp(0)}"
+        fontSize="30sp"
+        maxLength="40"
+        text=""
+        paddingLeft="{dp(0)}"
+        placeholder="输入用户名"
+        placeholderColor="{config.placeholderColor}"
+        cursorColor="transparent"
+        clearable = "false"
+        color="{config.textColor}"/>
 
     <TextView
         id="query_content"
@@ -41,6 +58,38 @@
         verticalAlign="{enum.TextView.VerticalAlign.Middle}"
         multiState="{config.common_button_multistate}"
     />
+
+    <TextField
+        id="name_input_register_TextField"
+        width="{sdp(200)}"
+        height="{dp(60)}"
+        background="transparent"
+        borderWidth="{dp(0)}"
+        fontSize="30sp"
+        maxLength="40"
+        text=""
+        paddingLeft="{dp(0)}"
+        placeholder="输入用户名"
+        placeholderColor="{config.placeholderColor}"
+        cursorColor="transparent"
+        clearable = "false"
+        color="{config.textColor}"/>
+
+    <TextField
+        id="pwd_input_register_TextField"
+        width="{sdp(200)}"
+        height="{dp(60)}"
+        background="transparent"
+        borderWidth="{dp(0)}"
+        fontSize="30sp"
+        maxLength="40"
+        text=""
+        paddingLeft="{dp(0)}"
+        placeholder="输入密码"
+        placeholderColor="{config.placeholderColor}"
+        cursorColor="transparent"
+        clearable = "false"
+        color="{config.textColor}"/>
 
     <TextView
         id="register_content"

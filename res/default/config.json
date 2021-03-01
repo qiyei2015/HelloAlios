@@ -49,5 +49,8 @@
         "disabled": {
             "background": "blue"
         }
-    }
+    },
+
+    "placeholderColor": "#74767E",
+    "textColor": "#F0F2F7"
 }

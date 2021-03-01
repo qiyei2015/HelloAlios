@@ -11,7 +11,7 @@ import View = require("yunos/ui/view/View")
 import Button = require("yunos/ui/widget/Button")
 import ToastUtils = require("../utils/ToastUtils");
 import NaviModel = require("../model/NaviModel");
-
+import TextField = require("yunos/ui/view/TextField");
 
 
 const TAG = "NaviPresenter"
@@ -23,6 +23,10 @@ class NaviPresenter extends Presenter {
     private registerBtn:TextView
     private queryTv:TextView
     private registerTv:TextView
+
+    private queryNameTf:TextField
+    private registerNameTf:TextField
+    private registerPwdTf:TextField
 
     private dataModel:NaviModel
 
@@ -57,7 +61,7 @@ class NaviPresenter extends Presenter {
         this.queryTv = <TextView> view.findViewById("query_content")
         this.queryBtn.on("tap", () => {
             ToastUtils.showToast("button Click queryUser !")
-            this.dataModel.queryUser("hxw").subscribe((data) => {
+            this.dataModel.queryUser(this.queryNameTf.text).subscribe((data) => {
                 let msg = JSON.stringify(data)
                 log.I(TAG,"queryUser,success=" + msg)
                 this.queryTv.text = msg
@@ -71,7 +75,7 @@ class NaviPresenter extends Presenter {
         this.registerTv = <TextView> view.findViewById("register_content")
         this.registerBtn.on("tap", () => {
             ToastUtils.showToast("button Click registerUser !")
-            this.dataModel.registerUser("hxw","123456").subscribe((data) => {
+            this.dataModel.registerUser(this.registerNameTf.text,this.registerPwdTf.text).subscribe((data) => {
                 let msg = JSON.stringify(data)
                 log.I(TAG,"registerUser,success=" + msg)
                 this.registerTv.text = msg
@@ -80,6 +84,10 @@ class NaviPresenter extends Presenter {
                 log.I(TAG,"registerUser,error=" + err)
             })
         })
+
+        this.queryNameTf = <TextField>view.findViewById("name_input_query_TextField")
+        this.registerNameTf = <TextField>view.findViewById("name_input_register_TextField")
+        this.registerPwdTf = <TextField>view.findViewById("pwd_input_register_TextField")
     }
 }
 
