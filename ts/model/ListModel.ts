@@ -17,7 +17,7 @@ class ListModel extends Model {
     }
 
     getLocalData():string[]{
-        let data:string[];
+        let data:string[] = new Array(1000);
         for (let i = 0; i < 10000; i++) {
             data[i] = "数据 " + i;
         }

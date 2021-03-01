@@ -11,7 +11,8 @@
       visibility="{enum.View.Visibility.Visible}" /> -->
   <include
       id="default_loading"
-      markup="default_loading" />
+      markup="default_loading" 
+      visibility="{enum.View.Visibility.Hidden}" />
 
 </CompositeView>
 

@@ -29,7 +29,7 @@
                     "left": "parent",
                     "right": "parent",
                     "top": {
-                        "target": 0,
+                        "target": "action_bar",
                         "side": "bottom"
                     },
                     "bottom": "parent"

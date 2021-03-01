@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompositeView
     height="{config.common_item_height}"
-    layout="{layout.item_list}">
+    layout="{layout.item_list_with_scroll}">
   <CompositeView layout="{layout.item_list}">
     <ImageView
         id="thumb_img"

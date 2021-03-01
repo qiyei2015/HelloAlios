@@ -20,7 +20,7 @@
     },
 
     "loading_hint_color": "#f0f2f7",
-    "loading_hint_size": "{sdp(28)}",
+    "loading_hint_size": "28sp",
 
     "hint_text_margin_left": "{sdp(40)}",
     "hint_text_height": "{sdp(122)}",
@@ -30,8 +30,9 @@
     "thumb_width": "{sdp(120)}",
     "thumb_height": "{sdp(75.6)}",
 
-    "item_list_title_fontSize": "{30sp}",
-    "item_card_content_fontSize": "{sdp(28)}",
+    "margin_item_list_content": "{sdp(19)}",
+    "item_list_title_fontSize": "30sp",
+    "item_card_content_fontSize": "28sp",
     "item_list_text_color": "#F0F2F7",
     "item_card_margin_left": "{sdp(20)}",
     "item_card_margin_right": "{sdp(20)}",

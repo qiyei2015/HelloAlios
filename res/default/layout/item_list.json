@@ -1,4 +1,21 @@
 {
+    "item_list_with_scroll": {
+        "type": "RelativeLayout",
+        "params": {
+            "0": {
+                "align": {
+                    "left": "parent",
+                    "right": "parent",
+                    "top": "parent",
+                    "bottom": "parent"
+                },
+                "margin": {
+                    "left": "{config.margin_item_list_content}",
+                    "right": "{config.margin_item_list_content}"
+                }
+            }
+        }
+    },
     "item_list": {
         "type": "RelativeLayout",
         "params": {
