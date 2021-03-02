@@ -9,7 +9,7 @@
                     "top": "parent"
                 }
             },
-            "content": {
+            "setting_content": {
                 "align": {
                     "top": {
                         "target": "action_bar",
@@ -18,6 +18,34 @@
                     "left": "parent",
                     "right": "parent",
                     "middle": "parent"
+                }
+            }
+        }
+    },
+    "setting_content": {
+        "type": "RelativeLayout",
+        "params": {
+            "checkBox1": {
+                "align": {
+                    "right": "parent",
+                    "top": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(20)}",
+                    "right": "{sdp(20)}"
+                }
+            },
+            "switch1": {
+                "align": {
+                    "top": {
+                        "target": "checkBox1",
+                        "side": "bottom"
+                    },
+                    "right": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(20)}",
+                    "right": "{sdp(20)}"
                 }
             }
         }

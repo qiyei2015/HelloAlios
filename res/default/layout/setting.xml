@@ -6,16 +6,29 @@
       markup="common_title_bar"
       id="action_bar" />
 
-<TextView
-    id="content"
-    text="{{message}}"
-    width="{dp(300)}"
-    height="{dp(50)}"
-    fontSize="50sp"
-    color="{config.common_button_color}"
-    background="#FF6600"
-    align="{enum.TextView.Align.Center}"
-    verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
+    <CompositeView 
+        id="setting_content" 
+        background="#FF6600"
+        layout="{layout.setting_content}">
+
+        <CheckBox
+            id="checkBox1"
+            text="设置1"
+            width="{dp(160)}"
+            height="{dp(160)}"
+            multiState="{config.common_button_multistate}"
+        />
+
+        <Switch
+            id="switch1"
+            text="设置2"
+            width="{dp(200)}"
+            height="{dp(100)}"
+            buttonColor="pink"
+            value="false"
+            multiState="{config.common_button_multistate}"
+        />
+    </CompositeView>
 
 </CompositeView>
 
