@@ -156,13 +156,69 @@
                     "top": "{config_control_bar.item_margin_top}"
                 }
             },
-            "title": {
+            "home_content": {
                 "align": {
                     "left": {
-                        "target": "control_bar",
+                        "target": "home_img",
                         "side": "right"
                     },
-                    "middle": "parent"
+                    "right": "parent",
+                    "top": "parent",
+                    "bottom": "parent"
+                }
+            }
+        }
+    },
+    "home_content": {
+        "type": "RelativeLayout",
+        "params": {
+            "anim_btn1": {
+                "align": {
+                    "left": "parent",
+                    "top": "parent"
+                },
+                "margin": {
+                    "top": "{sdp(80)}",
+                    "left": "{sdp(100)}"
+                }
+            },
+            "anim_btn2": {
+                "align": {
+                    "left": "parent",
+                    "top": {
+                        "target": "anim_btn1",
+                        "side": "bottom"
+                    }
+                },
+                "margin": {
+                    "top": "{sdp(80)}",
+                    "left": "{sdp(100)}"
+                }
+            },
+            "anim_btn3": {
+                "align": {
+                    "left": "parent",
+                    "top": {
+                        "target": "anim_btn2",
+                        "side": "bottom"
+                    }
+                },
+                "margin": {
+                    "top": "{sdp(80)}",
+                    "left": "{sdp(100)}"
+                }
+            },
+            "anim_btn4": {
+                "align": {
+                    "left": "parent",
+                    "top": {
+                        "target": "anim_btn3",
+                        "side": "bottom"
+                    }
+                },
+                "margin": {
+                    "top": "{sdp(80)}",
+                    "left": "{sdp(100)}"
                 }
             }
         }

@@ -68,7 +68,57 @@
       align="{enum.TextView.Align.Center}"
       verticalAlign="{enum.TextView.VerticalAlign.Middle}"/>
 
+    <CompositeView 
+        id="home_content" 
+        background="#FF6600"
+        layout="{layout.home_content}">
 
-    <TextView id="title" text="{{message}}" />
+        <Button
+            id="anim_btn1"
+            text="旋转动画"
+            width="{dp(140)}"
+            height="{dp(80)}"
+            fontSize="25sp"
+            color="{config.common_button_color}"
+            align="{enum.TextView.Align.Center}"
+            verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+            multiState="{config.common_button_multistate}"
+        />
 
+        <Button
+            id="anim_btn2"
+            text="透明度动画"
+            width="{dp(140)}"
+            height="{dp(80)}"
+            fontSize="25sp"
+            color="{config.common_button_color}"
+            align="{enum.TextView.Align.Center}"
+            verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+            multiState="{config.common_button_multistate}"
+        />
+
+        <Button
+            id="anim_btn3"
+            text="缩放动画"
+            width="{dp(140)}"
+            height="{dp(80)}"
+            fontSize="25sp"
+            color="{config.common_button_color}"
+            align="{enum.TextView.Align.Center}"
+            verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+            multiState="{config.common_button_multistate}"
+        />
+
+        <Button
+            id="anim_btn4"
+            text="组合动画"
+            width="{dp(140)}"
+            height="{dp(80)}"
+            fontSize="25sp"
+            color="{config.common_button_color}"
+            align="{enum.TextView.Align.Center}"
+            verticalAlign="{enum.TextView.VerticalAlign.Middle}"
+            multiState="{config.common_button_multistate}"
+        />
+    </CompositeView>
 </CompositeView>

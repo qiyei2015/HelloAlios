@@ -1,6 +1,6 @@
 <theme name="default">
     <property-set name="home">
-        <property name="background">#FF6600</property>
+        <!-- <property name="background">#FF6600</property> -->
         <!-- <id name="title">
             <property name="color">#FF0000</property>
             <property name="fontSize">100dp</property>
